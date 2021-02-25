@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.floded {
+    width: 220px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url(./Assassins-Creed-IV-Black-Flag.jfif);
+    background-size: cover;
+    background-position: center;
+    transform: translate(-50%, -50%) skewY(0deg) rotateY(0deg);
+    border-bottom: 10px solid rgb(28, 132, 230);
+    border-top: 10px solid rgb(28, 132, 230);
+
+    transition: 1s;
+    &:hover {
+        transform: translate(-50%, -50%) skewY(15deg) rotateY(3deg);
+    }
+    &:hover:before {
+        transform: perspective(2000px) skewY(-25deg) rotateY(0deg);
+    }
+    &:hover:after {
+        transform: perspective(2000px) skewY(-25deg) rotateY(0deg);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: calc(100% + 20px);
+        background: url(./Assassins-Creed-IV-Black-Flag.jfif);
+        background-size: cover;
+        background-position: -103px 0px;
+        top: -10px;
+        left: -80%;
+        border-bottom: 10px solid rgb(28, 132, 230);
+        border-top: 10px solid rgb(28, 132, 230);
+        border-left: 10px solid rgb(28, 132, 230);
+        box-sizing: border-box;
+        transform: perspective(2000px) skewY(-25deg) rotateY(90deg);
+        transform-origin: right;
+        box-shadow: inset -15px 0 15px rgba(0, 0, 0, 0.1);
+        transition: 1s;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: calc(100% + 20px);
+        background: url(./Assassins-Creed-IV-Black-Flag.jfif);
+        background-size: cover;
+        background-position: 269px 0px;
+        top: -10px;
+        right: -80%;
+        border-bottom: 10px solid rgb(28, 132, 230);
+        border-top: 10px solid rgb(28, 132, 230);
+        border-right: 10px solid rgb(28, 132, 230);
+        box-sizing: border-box;
+        transform: perspective(2000px) skewY(-25deg) rotateY(-90deg);
+        transform-origin: left;
+        box-shadow: inset 15px 0 15px rgba(0, 0, 0, 0.1);
+        transition: 1s;
+    }
+}
