@@ -21,16 +21,18 @@ body {
     align-items: center;
     cursor: pointer;
     margin: 0 30px;
-    background: rgb(237,14,14);
-    background: linear-gradient(180deg, rgba(237,14,14,0.8909313725490196) 12%, rgba(227,255,0,0.9497549019607843) 46%);
+    background: rgb(237, 14, 14);
+    background: linear-gradient(
+        180deg,
+        rgba(237, 14, 14, 0.8909313725490196) 12%,
+        rgba(227, 255, 0, 0.9497549019607843) 46%
+    );
     transition: all 2ms;
-    &:hover{
-        background:  rgb(209, 223, 15);
-  
+    &:hover {
+        background: rgb(209, 223, 15);
     }
     &:hover .eye::before {
         transform: translate(18px, 20px);
-        
     }
 
     &:hover::before {
@@ -149,8 +151,12 @@ body {
     align-items: center;
     cursor: pointer;
     margin: 0 30px;
-    background: rgb(237,14,14);
-background: linear-gradient(180deg, rgba(237,14,14,0.8909313725490196) 12%, rgba(227,255,0,0.9497549019607843) 46%);
+    background: rgb(237, 14, 14);
+    background: linear-gradient(
+        180deg,
+        rgba(237, 14, 14, 0.8909313725490196) 12%,
+        rgba(227, 255, 0, 0.9497549019607843) 46%
+    );
     &:hover .eye::before {
         transform: translate(-6px, -10px);
     }
