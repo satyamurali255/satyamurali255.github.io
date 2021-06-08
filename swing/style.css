@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(237, 243, 243);
+}
+
+#swig {
+    animation: swing 2.5s infinite linear;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+@keyframes swing {
+    0% {
+        transform: rotateZ(-10deg);
+    }
+    50% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(-10deg);
+    }
+}
+#Group1 {
+    animation: motion 2s infinite ease-in-out;
+    transform-origin: bottom;
+}
+@keyframes motion {
+    0% {
+        transform:skewX(5deg);
+    }
+    50% {
+        transform: skewX(-5deg);
+    }
+    100% {
+        transform: skewX(5deg);
+    }
+}
